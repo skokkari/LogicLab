@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.inputs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.bit {
+  min-width: 80px;
+  min-height: 48px;
+  font-size: 18px;
+  border: 2px solid #888;
+  border-radius: 8px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.bit.on, .out.on {
+  background: #4caf50;
+  color: white;
+  border-color: #2e7d32;
+}
+
+.out {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 8px;
+  background: #eee;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+#diagram {
+  width: 100%;
+  max-width: 500px;
+  margin: 8px 0 16px;
+}
+
+#diagram text {
+  font-size: 16px;
+}
+
+#diagram line, #diagram polyline {
+  stroke: #999;
+  stroke-width: 3;
+  fill: none;
+}
+
+#diagram .wire-on {
+  stroke: #4caf50;
+}
+
+#diagram .gate {
+  fill: #f5f5f5;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+#diagram .gate-label {
+  text-anchor: middle;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#diagram .bubble {
+  fill: white;
+  stroke: #333;
+  stroke-width: 2;
+}
+#diagram .gate-extra {
+  fill: none;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+#diagram .gate-name {
+  text-anchor: middle;
+  font-size: 12px;
+  fill: #555;
+}
